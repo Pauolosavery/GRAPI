@@ -1,0 +1,104 @@
+.navBar {
+  display: block;
+  height: 100vh;
+  width: 30%;
+  background-color: #fff;
+}
+
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  height: 39px;
+  background-color: #f0f2f5;
+  padding: 10px 16px;
+}
+
+.newChatBlock {
+  display: flex;
+  align-items: center;
+  height: 49px;
+  padding: 0 12px;
+  border-bottom: 1px solid #8080803b;
+}
+
+.searchWrapper {
+  height: 35px;
+  display: flex;
+  position: relative;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  box-sizing: border-box;
+    width: 100%;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  font-size: 30px;
+  position: relative }
+
+  .icon p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+  
+.input__control {
+  width: 350px;
+  border: 0px solid #dde2e5;
+  border-radius: 8px;
+  padding: 17px 20px 13px 24px;
+  outline: none;
+  background-color: transparent;
+}
+
+.input__control::placeholder {
+  font-family: 'arial';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.search__icon {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  opacity: 0.7;
+}
+/* --------- Tooltip Styles ---------- */
+
+.tooltip {
+  padding: 5px 12px;
+  border-radius: 100%;
+  font-size: 20px;
+  position: absolute;
+  left: 88%;
+  opacity: 0;
+  transition: all ease 0.3s;
+  content: attr(dataTooltip);
+  background: rgba(255, 255, 255, 0.6);
+  top: -15px;
+  transform: translateY(-100%);
+  font-size: 14px;
+  margin-left: -150px;
+  width: 460px;
+  border-radius: 10px;
+  color: #0000006c;
+  padding: 14px;
+}
+
+/* Hover states */
+
+.newChatBlock:hover .tooltip{
+  opacity: 1;
+}
+
+.input__control::placeholder {
+  font-size: 14px;
+}
